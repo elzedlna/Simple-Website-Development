@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My.Website</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="about-section">
+            <h1>What about me?</h1>
+            <p>I majored in Computer Science and my life has never been diffi-code</p>
+            <p>Shah Alam based</p>
+        </div>
+
+        <!--Navigation-->
+        <div id="About" onclick="off()">
+          <div id="About-text">
+              <ul>
+                 <li> My name is Wan Eliz Edlina Bt Wan Zamani </li>
+                    <li>  2020616608 </li>
+                  <li>  CS1104F  </li> 
+               </ul>
+          </div>
+      </div>
+
+      <div id="signup" onclick="on1()">
+        <div style="margin: 50px;">
+            <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif; text-align: left;"> SIGN-UP FORM</h1>
+            <p style="font-family:courier;text-align: left;">PLEASE SIGN UP BEFORE REVIEWING THE WEBSITE</p>
+
+            <form action="page1.html">
+                <br>1.<label for="Patientname">Patient's name</label><br>
+
+                <input placeholder="First" type="text" , id="patientname" name="patientname">
+
+                <input placeholder="Middle" type="text" , id="middle" name="middle">
+
+                <input placeholder="Last" type="text" , id="last" name="last"><br>
+
+                <select id="country" name="country">
+                  <option value ="Country">Select Country</option>
+                  <option value="Selangor">Selangor</option>
+                  <option value="Kuala Lumpur">Kuala Lumpur</option>
+                  <option value="Pahang">Pahang</option>
+              </select><br>
+
+                <br>2.<br><input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+
+                <br><input type="radio" id="male" name="gender" value="Male">
+                <label for="female">Male</label><br>
+
+                <br>3.
+                <br><input type="checkbox" id="Mr" name="mr" value="mr">
+                <label for="mr"> Mr.</label><br>
+                <input type="checkbox" id="Mrs" name="nrs" value="mrs">
+                <label for="mrs"> Mrs.</label><br>
+                <input type="checkbox" id="Ms" name="ms" value="ms">
+                <label for="ms"> Ms.</label><br>
+
+                <br>4.<label for="email">Email Address:</label><br>
+
+                <input placeholder="Enter Email" type="text" , id="email" name="email"><br>
+
+                <br>5.<br><label for="pass">Password:</label><br>
+
+                <input placeholder="Enter Password" type="text" , id="pass" name="pass"><br>
+
+                <label for="pass">Re-enter Password:</label><br>
+                <input placeholder="Re-enter Password" type="text" , id="pass" name="pass"><br>
+
+                <br> <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+      <div class="topnav">
+        <a href="page1.html">Home</a>
+        <a onclick="on()">About</a>
+        <a onclick="on1()">Sign Up</a>
+    </div>
+
+      <script>
+          function on() {
+              document.getElementById("About").style.display = "block";
+          }
+
+          function off() {
+              document.getElementById("About").style.display = "none";
+          }
+
+          function on1() {
+              document.getElementById("signup").style.display = "block";
+          }
+
+          function off1() {
+              document.getElementById("signup").style.display = "none";
+          }
+      </script>
+
+<h2 style="text-align:center">My interests</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="img2.jpg" alt="Fashion" style="width:100%">
+      <div class="container">
+        <h2>Fashion</h2>
+        <p>Some of the fashion inspos i liked</p>
+        <p><button class="button" onclick="document.location='page2.html'">Click here</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="img3.jpg" alt="Food" style="width:100%">
+      <div class="container">
+        <h2>Food</h2>
+        <p>Who doesn't like food?</p>
+        <p><button class="button" onclick="document.location='page3.html'">Click here</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="img4.jpg" alt="Work" style="width:100%">
+      <div class="container">
+        <h2>My Work</h2>
+        <p>Some of the things i created</p>
+        <p><button class="button" onclick="document.location='page4.html'">Click here</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
